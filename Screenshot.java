@@ -32,6 +32,7 @@ public class Screenshot {
              
             Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
             Rectangle captureRect = new Rectangle(725, 1040, 350, 10);
+                 //Note is (x, y, height, width) not (x1, y1, x2, y2)
             //Rectangle captureRect = new Rectangle(940, 100, 980, 150 );
             //Rectangle captureRect = new Rectangle(0, 0, 1000, 1000);
             BufferedImage screenFullImage = robot.createScreenCapture(captureRect);
